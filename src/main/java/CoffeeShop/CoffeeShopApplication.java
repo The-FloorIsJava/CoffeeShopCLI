@@ -13,6 +13,6 @@ public class CoffeeShopApplication {
         String output = service.getMessageBasedOnNumCoffees(numberOfCoffees);
         System.out.println(output);
 //perform different actions depending on what that number is
-
+        System.out.println("Thanks for visiting!");
     }
 }
