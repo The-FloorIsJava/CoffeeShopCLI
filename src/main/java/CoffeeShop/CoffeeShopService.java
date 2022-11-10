@@ -9,8 +9,25 @@ public class CoffeeShopService {
     public String getMessageBasedOnNumCoffees(int numberOfCoffees){
         if(numberOfCoffees > 0){
             return "You ordered " + numberOfCoffees + " coffees";
+        }else if(numberOfCoffees == 0){
+            return "exit";
         }else{
             return "Invalid action";
+        }
+    }
+    /**
+     * to determine if we should end the coffee shop application,
+     * let's return true if coffee input is 0
+     * and false otherwise
+     *
+     * @param numberOfCoffees number of coffees generated from user input
+     * @return true if numberOfCoffees is 0, false otherwise
+     */
+    public boolean shouldMenuExit(int numberOfCoffees){
+        if(numberOfCoffees == 0){
+            return true;
+        }else{
+            return false;
         }
     }
 }
